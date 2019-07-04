@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import './components/StartServerButton'
+import { ServerStatus } from './components/ServerStatus';
+import { StartServerButton } from './components/StartServerButton';
+import { StopServerButton } from './components/StopServerButton';
 
 const App: React.FC = () => {
   return (
@@ -18,6 +22,9 @@ const App: React.FC = () => {
         >
           Learn React
         </a>
+        <ServerStatus />
+        <StartServerButton />
+        <StopServerButton />
       </header>
     </div>
   );
